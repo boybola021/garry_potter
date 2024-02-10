@@ -41,6 +41,7 @@ class OneBook extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final y = MediaQuery.sizeOf(context).height;
+    final x = MediaQuery.sizeOf(context).width;
     final AllBooks allBooks = Network.parseBook(data);
     return Scaffold(
       body: ListView(
